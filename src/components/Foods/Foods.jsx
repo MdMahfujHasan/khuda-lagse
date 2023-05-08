@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Foods = ({ food, handleAddToCart }) => {
     const { idMeal, strMeal, strArea, strMealThumb } = food;
     return (
-        <div className='border border-rose-300 rounded p-4'>
+        <div className='border border-rose-300 hover:border-rose-500 rounded p-4'>
             <img className='w-56 h-56 rounded' src={strMealThumb} alt="Meal image" />
             <p><small><b>ID:</b> {idMeal}</small></p>
             <h2 className='text-2xl font-semibold'>{strMeal}</h2>

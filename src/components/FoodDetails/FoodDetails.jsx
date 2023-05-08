@@ -1,9 +1,10 @@
 /* eslint-disable */
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigate } from 'react-router-dom';
 
 const FoodDetails = () => {
     const foodDetails = useLoaderData();
+    const navigate = useNavigate();
     const { strMeal, strArea, strCategory, strMealThumb, strInstructions, strYoutube, strSource } = foodDetails.meals[0];
     return (
         <div>

@@ -12,6 +12,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Foods from './components/Foods/Foods';
 import FoodDetails from './components/FoodDetails/FoodDetails';
+import NotFound from './components/NotFound/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact></Contact>
+      },
+      {
+        path: "*",
+        element: <NotFound></NotFound>
       }
     ]
   },
