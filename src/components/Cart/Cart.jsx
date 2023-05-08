@@ -4,7 +4,7 @@ import Food from '../Food/Food';
 
 const Cart = ({ cart }) => {
     return (
-        <div className='h-96 overflow-y-scroll'>
+        <div className='h-1/6 overflow-y-scroll'>
             {
                 cart.map(food => <Food
                     key={food.idMeal}
